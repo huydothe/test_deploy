@@ -11,7 +11,7 @@
     "build": "npm-run-all clean tsc copy-assets",
     "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/index.js\"",
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
-    "start": "node .",
+    "start": "node index.js",
     "test": "jest --runInBand --detectOpenHandles ./dist/tests"
   },
   "author": "",
